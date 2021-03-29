@@ -8,11 +8,11 @@ REMEMBER ONLY READ THIS FILE AFTER YOU FINISH SET UP YOUR WORKSPACE
 - After that, click to submit then it will update your to-do-list items below
 
 ### DELETE:
-- to delete any item that you finished or you do not want to continue to do, click Delete button below job you want to delete 
+- to delete any item that you finished or you do not want to continue to do, click DELETE button below job you want to delete 
 
 ### PUT:
-- to edit any item that you want to change information, again fill in the form Job Description, Day Finish, and Time Finish but instead of clicking submit button, now click EDIT button to the item you want to change
-- remember to do not let all information blank, you will get alert from sever
+- to edit any item that you want to change information, again fill in the form Job Description, Day Finish, and Time Finish but instead of clicking submit button, now click EDIT button below the item you want to change
+- remember do not let all information blank, you will get alert from sever
 
 ### GET:
 - to see every data you created in JSON file, access localhost:3000/getdata
