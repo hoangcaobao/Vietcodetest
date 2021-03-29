@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        Vietcode Backend Test
+    </h1>
+    <div class="container">
+        
+            <h2 > CREATE YOUR TO DO ITEM</h2>
+            <form action="/createtodo" method="POST" class="information">
+                
+                    <label for="Job">Job Description:</label>
+                    <input type="text" id="job" name="job" placeholder="Doing Physic Homework">
+                    <label for="day">Day Finish:</label>
+                    <input type="text" id="day" name="day" placeholder="1st April">
+                    <label for="time">Time Finish:</label>
+                    <input type="text" id="time" name="time" placeholder="2:00 PM">
+                    <button type="submit">submit</button>
+                    
+                
+            </form> 
+        
+    </div>
+    <div>
+        <ul>
+             <% for(var i=0; i<todoList.length;i++){ %>
+                <li>
+                <span><%= todoList[i].job %> </span>
+                <span><%= todoList[i].day %> </span>
+                <span><%= todoList[i].time %> </span>
+                </li>
+                <div class="change" data-doc="<%= todoList[i]._id%>">
+                    <a class="delete" data-doc='<%= todoList[i]._id %>' > DELETE </a>
+                    <a class="edit" data-doc="<%= todoList[i]._id %>">EDIT</a>
+                </div>
+            <% } %>
+        </ul>
+
+    </div>
+    <script src="/button.js"></script>
+    
+</body>
+</html>
