@@ -9,7 +9,7 @@
 - Now you have necessary files to run my sever and api
 
 ### STEP 3: OPEN FOLDER IN VISUAL STUDIO CODE
-- After finishing clone git, type: cd Vietcodetest
+- After finishing git clone, type: cd Vietcodetest
 - Now you are in Vietcodetest foler, then type: code .
 - Waiting about 5s the VScode will open on your screen with Vietcodetest folder
 
